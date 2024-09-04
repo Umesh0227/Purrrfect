@@ -1,20 +1,10 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import ToggleButton from 'react-bootstrap/ToggleButton';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import React from 'react';
+import Button from 'react-bootstrap/Button';
 
-const  SignupButton = () => {
-
-<ButtonGroup className="mb-2">
-<ToggleButton
-  id="toggle-check"
-  type="checkbox"
-  variant="secondary"
-  checked={checked}
-  value="1"
-
->
-  Checked
-</ToggleButton>
-</ButtonGroup>
+function SignupButton() {
+  return (
+    <Button variant="primary" className="signup-button">Sign Up</Button>
+  );
 }
+
 export default SignupButton;

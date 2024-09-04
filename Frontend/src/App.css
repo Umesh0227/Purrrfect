@@ -1,0 +1,8 @@
+.navbar .form-control {
+    width: 200px; /* Adjust as needed */
+  }
+  
+  .navbar .signup-button {
+    margin-left: auto; /* Push the Signup button to the right */
+  }
+  
