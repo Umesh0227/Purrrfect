@@ -1,8 +1,66 @@
-.navbar .form-control {
-    width: 200px; /* Adjust as needed */
+/* Navbar background color */
+.navbar-custom {
+    background-color: #ffee00; /* Dark background color for the navbar */
   }
   
-  .navbar .signup-button {
-    margin-left: auto; /* Push the Signup button to the right */
+  /* Container for form and search button */
+  .form-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    flex: 1; /* Allow the container to grow and take available space */
+    justify-content: center; /* Center items horizontally */
+    margin-right: 16px; /* Adjust the margin as needed */
+  }
+  
+  /* Form control (search bar) */
+  .form-control {
+    width: 200px; /* Adjust as needed */
+    margin-right: 8px; /* Space between search bar and search button */
+  }
+  
+  /* Search button */
+  .custom-search-button {
+    background-color: #000000; /* Your desired color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    margin-right: 8px; /* Space between search button and signup button */
+  }
+  
+  
+  
+  /* Signup button container */
+  .signup-button-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+  }
+  
+  /* Signup button */
+  .custom-signup-button {
+    background-color: #000000; /* Your desired color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+  }
+  
+  .custom-signup-button:hover {
+    background-color: #000000; /* Darker shade on hover */
+  }
+  
+  /* Navbar link and brand colors */
+  .navbar-custom .nav-link, .navbar-custom .navbar-brand {
+    color: rgb(0, 0, 0); /* Black color for links and brand */
+  }
+  
+  .navbar-custom .nav-link:hover {
+    color: #b5dc05; /* Light green color on hover */
+  }
+  /* Navbar brand styling */
+.navbar-custom .navbar-brand {
+    font-size: 1.75rem; /* Adjust font size as needed */
+    font-weight: bold; /* Optional: make the font bold */
+    color: rgb(0, 0, 0); /* Adjust text color as needed */
+     }
+  
+  .navbar-custom .navbar-brand:hover {
+    color: #b5dc05; /* Optional: change color on hover */
   }
   

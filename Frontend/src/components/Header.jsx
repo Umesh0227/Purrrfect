@@ -5,11 +5,12 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import SignupButton from "./SignupButton"; // Import the SignupButton component
+import SignupButton from "./SignupButton";
+import '../App.css'; // Ensure this file includes your custom CSS
 
 function NavScrollExample() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar className="navbar-custom" expand="lg">
       <Container fluid>
         <Navbar.Brand href="#">Purrrfect</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -25,19 +26,21 @@ function NavScrollExample() {
             </NavDropdown>
             <Nav.Link href="#">Contact us</Nav.Link>
           </Nav>
-          <Form className="d-flex justify-content-start align-items-center">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-              style={{ maxWidth: "200px" }} /* Adjust the max-width as needed */
-            />
-            <Button variant="outline-success" className="me-2">
-              Search
-            </Button>
-          </Form>
-          <SignupButton /> {/* Add the SignupButton here */}
+          <div className="form-container">
+            <Form className="d-flex">
+              <Form.Control
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <Button className="custom-search-button">
+                Search
+              </Button>
+            </Form>
+          </div>
+          <div className="signup-button-container">
+            <SignupButton className="custom-signup-button" />
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
